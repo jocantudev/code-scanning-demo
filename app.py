@@ -7,7 +7,7 @@ def search():
     query = request.args.get("query")
     
     # Demo: código potencialmente inseguro
-    result = eval(query)
+    result = query
 
     return str(result)
 
